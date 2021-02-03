@@ -26,3 +26,4 @@ In this mode, the user can move the mouse cursor using the device. We implement 
 
 ### Labview Mode ###
 The LabVIEW mode is the speciality of this project. It allows the user to control parameters of various Virtual Instruments like (Amplitude, Frequency, etc). The device movement is mapped with sliders in the LabVIEW Front Panel. The applications write the data received from the broker to a text file. This text file is continuously read by the LabVIEW file for any changes. The two-push button on the device is mapped to the buttons on the LabVIEW front panel. This implementation ensures contactless interaction with the machine.
+It has immense industrial application possibility and easily can be integrated with exisisting LabView based Control Panels in Industry for contactless interface and interaction, which is useful in hazardous industries and helps prevent spread of surface viruses or diseases through common work surfaces.
