@@ -1,8 +1,4 @@
 pyqt5
 paho-mqtt
 pyttsx3
-os
 pyautogui
-sys
-platform
-time
