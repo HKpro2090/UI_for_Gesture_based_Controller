@@ -8,13 +8,14 @@ The UI was designed for actually as a Companion app for the Gesture Recogniser D
 
 The companion app is made using Python. The Library used in python is PyQt5. PyQt5 is the 5th Iteration of the PyQt GUI Library.]. The app uses custom style sheets to make it look it like Windows 10 Application. It also comes with a dark mode which looks aesthetically pleasing and saves battery. Our Companion App has two tabs: Home page and Settings.
 
-## Home Page ##
+## Features ##
+### Home Page ###
 The Home page is the first page shown once the app is opened. The home page shows the basic stats and condition of the device. It shows the battery percentage and battery health. IT even shows the connection stats: The Connection speed, connection type, and connection id. The app even tells which mode the user is currently in. This page allows quick mode switching: Off, Normal and LabVIEW. The app also allows quickly to open LabVIEW files (*.vi).
 
-## Settings Page ##
+### Settings Page ###
 The settings page allows the users to customize their experience with the app. It allows the user to toggle on and off the custom text to speech engine used in the app. It also shows the data transmitted by the device. This page also works as debug screen where we could troubleshoot problems related to the device.
 
-## Text to Speech ##
+### Text to Speech ###
 For visually impaired people, I have made the app easy to use by including a custom speech engine. The engine is called as Pyttsx3 This engine allows the user to know what he/she is pointing in the GUI. It also tells which mode the user is currently in. We allow the user to change the voice of the Text-to-Speech engine.
 
 
