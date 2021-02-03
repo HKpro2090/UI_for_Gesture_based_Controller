@@ -27,3 +27,19 @@ In this mode, the user can move the mouse cursor using the device. We implement 
 ### Labview Mode ###
 The LabVIEW mode is the speciality of this project. It allows the user to control parameters of various Virtual Instruments like (Amplitude, Frequency, etc). The device movement is mapped with sliders in the LabVIEW Front Panel. The applications write the data received from the broker to a text file. This text file is continuously read by the LabVIEW file for any changes. The two-push button on the device is mapped to the buttons on the LabVIEW front panel. This implementation ensures contactless interaction with the machine.
 It has immense industrial application possibility and easily can be integrated with exisisting LabView based Control Panels in Industry for contactless interface and interaction, which is useful in hazardous industries and helps prevent spread of surface viruses or diseases through common work surfaces.
+
+## Files and Folder Description ##
+- icons folder contain the icons used in the python code
+- 'main.py' It is the main python file which connects to all the other python modules.
+- 'main.ui' THe .ui file created by the QT designer. The .ui file can be edited in QT Designer (Note: After any changes run 'pyuic5 -o ui_main.py main.ui' in the terminal/CMD)
+- 'mqttbridge.py' This python module helps the user to connect to their MQTT Topic with the APP.
+- 'requirements.txt' This file contains the required python packages to run the program smoothly.
+- 'tes2.vi' It is the sample LabVIEW file created to show the use case of the program.
+- 'UI_functions.py' Contains ui functions like updating the UI realtime and usage of buttons and sliders in the APP.
+- 'UI_main.py' It is the converted form of 'main.ui'.
+
+## Installation ##
+- Open the Terminal/CMD to the cloned repository
+- Run 'pip install -r requirements.txt'
+- Users can connect to their MQTT topic by changing the topic name in the 'mqttbridge.py' file. Example change 'client.subscribe("Node_Data")' to 'client.subscribe("Ur topic name")'
+- Run the main.py
